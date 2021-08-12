@@ -22,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
         val name = nametxt.text.toString()
         val pass = passtxt.text.toString()
 
-        val intent = Intent(this@HomeActivity, MainActivity::class.java)
+        val intent = Intent(this@HomeActivity, MainActivity::class)
         intent.putExtra("nama", name)
         startActivity(intent)
     }
